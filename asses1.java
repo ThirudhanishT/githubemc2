@@ -29,11 +29,11 @@ class asses1
                         System.out.println("THE PASSWORD IS INVALID");
                        }
                        break;
-                case 2:System.out.println("ENter the number ");
+                case 2:System.out.println("Enter the number ");
                        int n;
                        n=scan.nextInt();
                        int fact=1;
-                       for(int i=0;i<=n;i++)
+                       for(int i=1;i<=n;i++)
                        {
                              fact=fact*i;
                        }

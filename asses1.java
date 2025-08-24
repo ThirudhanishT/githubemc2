@@ -13,7 +13,7 @@ class asses1
          while(true)
          {
             System.out.println("Enter your opinion");
-            Scanner scan=new Scanner (Sysstem.in);
+            Scanner scan=new Scanner (System.in);
             int choice=scan.nextInt();
             switch(choice)
             {

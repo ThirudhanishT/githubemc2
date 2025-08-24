@@ -53,7 +53,16 @@ class asses1
                        {
                         for(int j=0;j<r;j++)
                         {
-                          a[i][j]=scan.nextInt();
+                          arr1[i][j]=scan.nextInt();
+                          scan.nextLine();
+                        }
+                       }
+                       for(int i=0;i<k;i++)
+                       {
+                        for(int j=0;j<r;j++)
+                        {
+                          arr2[i][j]=scan.nextInt();
+                          scan.nextLine();
                         }
                        }
                        for(int i=0;i<n;i++)

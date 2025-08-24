@@ -114,7 +114,7 @@ class asses1
                        {
                         for(int j=0;j<r1;j++)
                         {
-                          c1[i][j]=arr11[i][j]+arr21[i][j];
+                          c1[i][j]=arr11[i][j]-arr21[i][j];
                         }
                        }
                        System.out.println("THE ADDITION OF THE ARRAY IS");

@@ -15,6 +15,7 @@ class asses1
             System.out.println("Enter your opinion");
             Scanner scan=new Scanner (System.in);
             int choice=scan.nextInt();
+            scan.nextLine();
             switch(choice)
             {
                 case 1:System.out.println("Enter the password");

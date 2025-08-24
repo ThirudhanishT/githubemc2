@@ -57,6 +57,7 @@ class asses1
                           scan.nextLine();
                         }
                        }
+                       System.out.println("Enter the arr2");
                        for(int i=0;i<k;i++)
                        {
                         for(int j=0;j<r;j++)
@@ -77,8 +78,9 @@ class asses1
                        {
                         for(int j=0;j<r;j++)
                         {
-                          System.out.println(c[i][j]);
+                          System.out.print(c[i][j]);
                         }
+                        System.out.print("\n");
                        }
                 case 5:System.out.println("EXITED SUCCESSFULLY");
                        return;

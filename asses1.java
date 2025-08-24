@@ -18,7 +18,7 @@ class asses1
             switch(choice)
             {
                 case 1:System.out.println("Enter the password");
-                       String pass=nextLine();
+                       String pass=scan.nextLine();
                        if(pass.length<=7 && pass.matches(".*[A-Z].*") && pass.matches(".*[a-z].*"))
                        {
                          System.out.println("THE PASSWORD IS VALID");
@@ -27,8 +27,9 @@ class asses1
                        {
                         System.out.println("THE PASSWORD IS INVALID");
                        }
-                  
-                case 5:return;
+                       break;
+                case 5:System.out.println("EXITED SUCCESSFULLY");
+                       return;
             }
          }
     }

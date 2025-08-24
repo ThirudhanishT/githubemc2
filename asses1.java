@@ -65,7 +65,7 @@ class asses1
                           scan.nextLine();
                         }
                        }
-                       for(int i=0;i<n;i++)
+                       for(int i=0;i<k;i++)
                        {
                         for(int j=0;j<r;j++)
                         {

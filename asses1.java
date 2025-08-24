@@ -29,6 +29,16 @@ class asses1
                         System.out.println("THE PASSWORD IS INVALID");
                        }
                        break;
+                case 2:System.out.println("ENter the number ");
+                       int n;
+                       n=scan.nextInt();
+                       int fact=1;
+                       for(int i=0;i<=n;i++)
+                       {
+                             fact=fact*i;
+                       }
+                       System.out.println("THE FACTORIAL OF THE NUMBER IS "+fact);
+                       break;
                 case 5:System.out.println("EXITED SUCCESSFULLY");
                        return;
             }

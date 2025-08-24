@@ -82,6 +82,51 @@ class asses1
                         }
                         System.out.print("\n");
                        }
+                       break;
+                case 4:System.out.println("Enter the row size of the array");
+                       int k1;
+                       k1=scan.nextInt();
+                       System.out.println("Enter the coloumn size of the array");
+                       int r1;
+                       r1=scan.nextInt();
+                       System.out.println("Enter the arr 1");
+                       int [][]arr11=new int[k1][r1];
+                       int [][]arr21=new int [k1][r1];
+                       int [][]c1=new int [k1][r1];
+                       for(int i=0;i<k1;i++)
+                       {
+                        for(int j=0;j<r1;j++)
+                        {
+                          arr11[i][j]=scan.nextInt();
+                          scan.nextLine();
+                        }
+                       }
+                       System.out.println("Enter the arr2");
+                       for(int i=0;i<k1;i++)
+                       {
+                        for(int j=0;j<r1;j++)
+                        {
+                          arr21[i][j]=scan.nextInt();
+                          scan.nextLine();
+                        }
+                       }
+                       for(int i=0;i<k1;i++)
+                       {
+                        for(int j=0;j<r1;j++)
+                        {
+                          c1[i][j]=arr11[i][j]+arr21[i][j];
+                        }
+                       }
+                       System.out.println("THE ADDITION OF THE ARRAY IS");
+                       for(int i=0;i<k1;i++)
+                       {
+                        for(int j=0;j<r1;j++)
+                        {
+                          System.out.print(c1[i][j]);
+                        }
+                        System.out.print("\n");
+                       }
+                       break;               
                 case 5:System.out.println("EXITED SUCCESSFULLY");
                        return;
             }

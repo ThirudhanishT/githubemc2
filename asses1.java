@@ -39,6 +39,24 @@ class asses1
                        }
                        System.out.println("THE FACTORIAL OF THE NUMBER IS "+fact);
                        break;
+                case 3:System.out.println("Enter the row size of the array");
+                       int k;
+                       k=scan.nextInt();
+                       System.out.println("Enter the coloumn size of the array");
+                       int r;
+                       r=scan.nextInt();
+                       System.out.println("Enter the arr 1")
+                       int [][]arr1=new int[k][r];
+                       int [][]arr2=new int [k][r];
+                       int [][]arr2=new int [k][r];
+                       for(int i=0;i<n;i++)
+                       {
+                        for(int j=0;j<r;j++)
+                        {
+                          c[i][j]=a[i][j]+b[i][j];
+                        }
+                       }
+                       
                 case 5:System.out.println("EXITED SUCCESSFULLY");
                        return;
             }

@@ -48,7 +48,7 @@ class asses1
                        System.out.println("Enter the arr 1");
                        int [][]arr1=new int[k][r];
                        int [][]arr2=new int [k][r];
-                       int [][]arr2=new int [k][r];
+                       int [][]c=new int [k][r];
                        for(int i=0;i<k;i++)
                        {
                         for(int j=0;j<r;j++)

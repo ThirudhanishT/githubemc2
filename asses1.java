@@ -53,7 +53,7 @@ class asses1
                        {
                         for(int j=0;j<r;j++)
                         {
-                          c[i][j]=arr1[i][j]+arr2[i][j];
+                          c[i][j]=arr1[i][j]+arr2[i];
                         }
                        }
                        System.out.println("THE ADDITION OF THE ARRAY IS");

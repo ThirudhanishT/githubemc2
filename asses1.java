@@ -45,7 +45,7 @@ class asses1
                        System.out.println("Enter the coloumn size of the array");
                        int r;
                        r=scan.nextInt();
-                       System.out.println("Enter the arr 1")
+                       System.out.println("Enter the arr 1");
                        int [][]arr1=new int[k][r];
                        int [][]arr2=new int [k][r];
                        int [][]arr2=new int [k][r];

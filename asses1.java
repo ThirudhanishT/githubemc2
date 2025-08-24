@@ -49,6 +49,13 @@ class asses1
                        int [][]arr1=new int[k][r];
                        int [][]arr2=new int [k][r];
                        int [][]arr2=new int [k][r];
+                       for(int i=0;i<k;i++)
+                       {
+                        for(int j=0;j<r;j++)
+                        {
+                          a[i][j]=scan.nextInt();
+                        }
+                       }
                        for(int i=0;i<n;i++)
                        {
                         for(int j=0;j<r;j++)

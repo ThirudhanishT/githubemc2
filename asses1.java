@@ -56,7 +56,14 @@ class asses1
                           c[i][j]=a[i][j]+b[i][j];
                         }
                        }
-                       
+                       System.out.println("THE ADDITION OF THE ARRAY IS");
+                       for(int i=0;i<k;i++)
+                       {
+                        for(int j=0;j<r;j++)
+                        {
+                          System.out.println(c[i][j]);
+                        }
+                       }
                 case 5:System.out.println("EXITED SUCCESSFULLY");
                        return;
             }

@@ -50,7 +50,7 @@ class jaggedArray
         }
         for(int i=0;i<customer.length;i++)
         {
-                 System.out.println("THE CUSTOMER "+(i+1)+"  "+/*"NO OF PRODUCTS THE CUSTOMER BOUGHT "+y[i]+"   "+*/"TOTAL: "+total[i]);
+                 System.out.println("THE CUSTOMER "+(i+1)+"  "+"NO OF PRODUCTS THE CUSTOMER BOUGHT "+customer[i].length+"   "+"TOTAL: "+total[i]);
         }
     }
 }

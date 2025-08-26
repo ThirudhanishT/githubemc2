@@ -12,5 +12,7 @@ class arraylistFunction
         list.add(0,"pumkin");
         System.out.println(list);
         System.out.println(list.get(0));
-    }
+        list.set(0,"greenApple");
+        System.out.println(list);
+   }
 }

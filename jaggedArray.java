@@ -8,7 +8,11 @@ class jaggedArray
         System.out.println("Enter the product list available in the department store");
         ArrayList<String>product=new ArrayList<>();
         ArrayList<Double>cost=new ArrayList<>();
-        for(int i=0;i<5;i++)
+        System.out.println("Enter the number of products available in the store");
+        int h;
+        h=scan.nextInt();
+        scan.nextLine();
+        for(int i=0;i<h;i++)
         {
             System.out.println("Enter the product: "+(i+1));
             String c=scan.nextLine();
@@ -39,7 +43,6 @@ class jaggedArray
                 int t;
                 System.out.println("Enter the product"+(k+1));
                 String name=scan.nextLine();
-                //scan.nextLine();
                 t=product.indexOf(name);
                 double r;
                 r=cost.get(t);

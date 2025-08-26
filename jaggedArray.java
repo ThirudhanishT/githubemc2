@@ -34,10 +34,10 @@ class jaggedArray
             System.out.println(product);
             System.out.println(cost);
             customer[i]=new int[y];
+            double total1=0.0;
             for(int k=0;k<customer[i].length;k++)
             {
                 int t;
-                double total1=0.0;
                 System.out.println("Enter the product"+(k+1));
                 String name=scan.nextLine();
                 //scan.nextLine();
@@ -45,8 +45,8 @@ class jaggedArray
                 double r;
                 r=cost.get(t);
                 total1=total1+r;
-                total[i]=total1;
             }
+            total[i]=total1;
         }
         for(int i=0;i<customer.length;i++)
         {

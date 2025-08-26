@@ -10,9 +10,9 @@ class jaggedArray
         ArrayList<Double>cost=new ArrayList<>();
         for(int i=0;i<5;i++)
         {
-            System.out.println("Enter the product"+(i+1));
+            System.out.println("Enter the product: "+(i+1));
             String c=scan.nextLine();
-            System.out.println("ENter the cost "+(i+1));
+            System.out.println("ENter the cost: "+(i+1));
             double d=scan.nextInt();
             scan.nextLine();
             cost.add(d);
@@ -23,7 +23,6 @@ class jaggedArray
         scan.nextLine();
         int [][]customer=new int [n][];
         double total[]=new double[n];
-       // int y[]=new int[n];
         System.out.println("Enter the details of the customers");
         for(int i=0;i<n;i++)
         {
@@ -50,7 +49,7 @@ class jaggedArray
         }
         for(int i=0;i<customer.length;i++)
         {
-                 System.out.println("THE CUSTOMER "+(i+1)+"  "+"NO OF PRODUCTS THE CUSTOMER BOUGHT "+customer[i].length+"   "+"TOTAL: "+total[i]);
+                 System.out.println("THE CUSTOMER "+(i+1)+"  "+"NO OF PRODUCTS THE CUSTOMER BOUGHT: "+customer[i].length+"   "+"TOTAL: "+total[i]);
         }
     }
 }

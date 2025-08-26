@@ -14,7 +14,7 @@ class arraylistFunction
         System.out.println(list.get(0));
         list.set(0,"greenApple");
         System.out.println(list);
-        remove(1);
+        list.remove(1);
         System.out.println(list);
    }
 }

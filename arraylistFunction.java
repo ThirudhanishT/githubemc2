@@ -1,6 +1,6 @@
 import java.lang.System;
 import java.util.*;
-class demo
+class arraylistFunction
 {
     public static void main(String args[])
     {

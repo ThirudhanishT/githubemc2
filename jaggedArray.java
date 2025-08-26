@@ -40,11 +40,12 @@ class jaggedArray
                 double total1=0.0;
                 System.out.println("Enter the product"+(k+1));
                 String name=scan.nextLine();
+                //scan.nextLine();
                 t=product.indexOf(name);
                 double r;
                 r=cost.get(t);
-                total1=total[k]+r;
-                total[k]=total1;
+                total1=total1+r;
+                total[i]=total1;
             }
         }
         for(int i=0;i<customer.length;i++)

@@ -29,6 +29,7 @@ class jaggedArray
         {
             System.out.println("Enter how many products are purchased by customer: "+(i+1));
             int y=scan.nextInt();
+            scan.nextLine();
             System.out.println("THE PRODUCTS:");
             System.out.println(product);
             System.out.println(cost);

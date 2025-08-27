@@ -23,12 +23,16 @@ class primepalindrom
             if(temp%j==0)
             {
                 count=count+1;
+            }
+            }
+            if(temp==num1 && count==2)
+            {
+                System.out.println(temp);
                 n=n+1;
             }
-            else 
+            else
             {
-                num=num+1;
-            }
+            num=num+1;
             }
         }
         /*if(temp==num1 && count==2)

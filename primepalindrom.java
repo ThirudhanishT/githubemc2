@@ -23,7 +23,7 @@ class primepalindrom
             if(temp%i==0)
             {
                 count=count+1;
-                i=i+1;
+                n=n+1;
             }
             else 
             {
@@ -31,13 +31,13 @@ class primepalindrom
             }
             }
         }
-        if(temp==num1 && count==2)
+        /*if(temp==num1 && count==2)
         {
             System.out.println("IT IS A PRIME PALINDROME");
         }
         else
         {
             System.out.println("not");
-        }
+        }*/
     }
 }

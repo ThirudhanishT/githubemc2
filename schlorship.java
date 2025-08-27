@@ -15,6 +15,7 @@ class Student
         ScholarshipPerStudent=c;
         TotalScholarshipAmount=d;
         DonationReceived=e;
+        Unutilized=DonationReceived-TotalScholarshipAmount;
     }
     void registerScholarship(int n)
     {
@@ -39,5 +40,6 @@ class schlorship
     {
         Student s1=new Student(100,50,2000,100000.00,120000.00);
         System.out.println(s1);
+
     }
 }

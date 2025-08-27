@@ -5,7 +5,7 @@ class sales
     public static void main(String args[])
     {
         Scanner scan=new Scanner(System.in);
-        int []a=new int [3][];
+        int [][]a=new int [3][];
         a[0]=new int [12];
         a[1]=new int [12];
         a[2]=new int [12];

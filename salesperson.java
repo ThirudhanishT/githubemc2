@@ -33,11 +33,11 @@ class sales
         {
             b=2000;
         }
-        if(no_sales>20 && no_sales<40)
+        else if(no_sales>20 && no_sales<40)
         {
             b=3000;
         }
-        if(no_sales>40)
+        else
         {
             b=5000;
         }
@@ -46,7 +46,7 @@ class sales
 }
 class salesperson
 {
-    public static void main(String args)
+    public static void main(String args[])
     {
         sales s=new sales(18,"THIRU",20000.00);
         s.display();

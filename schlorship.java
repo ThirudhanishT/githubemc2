@@ -8,14 +8,14 @@ class Student
     double TotalScholarshipAmount;
     double DonationReceived;
     double Unutilized;
-    Student(int a,int b,int c,double d,double e)
+    Student(int a,int b,int c,double e)
     {
         TotalNumberOfStudent=a;
         TotalNumberOfScholarshipsAwarded=b;
         ScholarshipPerStudent=c;
-        TotalScholarshipAmount=d;
+        TotalScholarshipAmount=a*c;
         DonationReceived=e;
-        Unutilized=DonationReceived-TotalScholarshipAmount;
+        Unutilized=e-(a*e);
     }
     void registerScholarship(int n)
     {
@@ -31,15 +31,18 @@ class Student
     }
     public String toString()
     {
-        return ("TOTAL STUDENT :"+TotalNumberOfStudent+"\nTOTAL SCHOLARSHIP AWARDED: "+TotalNumberOfScholarshipsAwarded+"\nScholarship Per Student: "+ScholarshipPerStudent+"\nTOTAL SCHOLARSGIP AMOUNT: "+TotalScholarshipAmount+"\nDonation Received: "+DonationReceived+"\nUnutilized: "+Unutilized);
+        return ("TOTAL STUDENT            :"+TotalNumberOfStudent+"\nTOTAL SCHOLARSHIP AWARDED:"+TotalNumberOfScholarshipsAwarded+"\nScholarship Per Student  :"+ScholarshipPerStudent+"\nTOTAL SCHOLARSGIP AMOUNT :"+TotalScholarshipAmount+"\nDonation Received        :"+DonationReceived+"\nUnutilized               :"+Unutilized);
     }
 }
 class schlorship
 {
     public static void main(String args[])
     {
-        Student s1=new Student(100,50,2000,100000.00,120000.00);
+        Student s1=new Student(100,50,2000,120000.00);
         System.out.println(s1);
-
+        System.out.println("After\n");
+        s1.registerScholarship(11);
+        s1.displayUnutilizedDonations();
+        System.out.println(s1);
     }
 }

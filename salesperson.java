@@ -6,7 +6,7 @@ class sales
     String name;
     int no_sales;
     double salary;
-    salesperson(int a,String b,double c)
+    sales(int a,String b,double c)
     {
         age=a;
         name=b;

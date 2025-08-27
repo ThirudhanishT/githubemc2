@@ -15,7 +15,18 @@ class primepalindrom
             num=num/10;
             temp=(temp*10)+rem;
         }
-        if(temp==num1 && temp%2!=0)
+        int count=0;
+        int n=0;
+        while(n<20)
+        { for(int i=1;i<=temp;i++)
+        {
+            if(temp%i==0)
+            {
+                count=count+1;
+            }
+        }
+        }
+        if(temp==num1 && count==2)
         {
             System.out.println("IT IS A PRIME PALINDROME");
         }

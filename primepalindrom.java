@@ -20,7 +20,7 @@ class primepalindrom
             }
             for(int j=2;j<=temp;j++)
             {
-            if(temp%i==0)
+            if(temp%j==0)
             {
                 count=count+1;
                 n=n+1;

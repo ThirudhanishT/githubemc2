@@ -4,13 +4,12 @@ class sales
 {
     int age;
     String name;
-    int no_sales;
+    int no_sales=0;
     double salary;
     sales(int a,String b,double c)
     {
         age=a;
         name=b;
-        n0_sales=0;
         salary=c;
     }
     void addScale(double saleAmount)
@@ -29,28 +28,27 @@ class sales
     }
     double getbonus()
     {
+        int b;
         if(no_sales>10 && no_sales<20)
         {
-            b=1000;
-            return b;
+            b=2000;
         }
         if(no_sales>20 && no_sales<40)
         {
-            b=2000;
-            return b;
+            b=3000;
         }
         if(no_sales>40)
         {
             b=5000;
-            return b;
         }
+        return b;
     }
 }
 class salesperson
 {
     public static void main(String args)
     {
-        sales s=new sales();
+        sales s=new sales(18,"THIRU",20000.00);
         s.display();
         System.out.println("NO_SALES:"+s.getsales());
         System.out.println("BONUS :"+s.getbonus());

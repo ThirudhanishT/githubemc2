@@ -16,7 +16,6 @@ class primepalindrom
             temp=(temp*10)+rem;
         }
         int count=0;
-        int n=0;
         while(n<20)
         { for(int i=1;i<=temp;i++)
         {

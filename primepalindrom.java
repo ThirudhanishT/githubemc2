@@ -4,7 +4,7 @@ class primepalindrom
 {
     public static void main(String args[])
     {
-        int num=2
+        int num=2;
         int num1=num;
         int rem;
         int temp=0;

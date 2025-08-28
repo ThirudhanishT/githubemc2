@@ -18,7 +18,7 @@ abstract class DepartmentFaculty
     }
     public String toString()
     {
-        return ("DEPARTMENT NAME :"+departmentName+"\nFACULTY NAME  :"facultyName+"\nYEARS EXPPERIENCE:"+years_exp);
+        return ("DEPARTMENT NAME :"+departmentName+"\nFACULTY NAME  :"+facultyName+"\nYEARS EXPPERIENCE:"+years_exp);
     }
 }
 class TeachingFaculty extends DepartmentFaculty
@@ -33,7 +33,8 @@ class TeachingFaculty extends DepartmentFaculty
     }
     public String toString()
     {
-     return ("DEPARTMENT NAME :"+departmentName+"\nFACULTY NAME  :"facultyName+"\nYEARS EXPPERIENCE:"+years_exp+"\nDESIGNATION: "+d+"SALARY: "+salary);
+     super.toString();
+     return ("\nDESIGNATION: "+designation+"\nSALARY: "+salary);
     }
 }
 class NonTeachingFaculty extends DepartmentFaculty
@@ -41,7 +42,7 @@ class NonTeachingFaculty extends DepartmentFaculty
     String designation;
     double wagesperday;
     int no_days;
-    double c;
+    double ca;
     NonTeachingFaculty(String a,String b,double c,int d,String e)
     {
         super(a,b);
@@ -51,10 +52,20 @@ class NonTeachingFaculty extends DepartmentFaculty
     }
     double calculateSalary()
     {
-        c=no_days*wagesperday;
+        ca=no_days*wagesperday;
+        return ca;
     }
     public String toString()
     {
-         return ("DEPARTMENT NAME :"+departmentName+"\nFACULTY NAME  :"facultyName+"\nDESIGNATION :"+e+"\nWAGESPERDAY: "+c+"\nNO OF DAYS: "+d+"SALARY: "+c);
+         super.toString();
+         return ("\nDESIGNATION :"+designation+"\nWAGESPERDAY: "+wagesperday+"\nNO OF DAYS: "+no_days+"SALARY: "+calculateSalary());
+    }
+}
+class faculty
+{
+    public static void main(String args[])
+    {
+        DepartmentFaculty tf=new TeachingFaculty("CSE","THIRU",3.5,"CHENNAI",2000000);
+        System.out.println(tf);
     }
 }

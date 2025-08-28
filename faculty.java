@@ -33,8 +33,7 @@ class TeachingFaculty extends DepartmentFaculty
     }
     public String toString()
     {
-     super.toString();
-     return ("\nDESIGNATION: "+designation+"\nSALARY: "+salary);
+     return (super.toString()+"\nDESIGNATION: "+designation+"\nSALARY: "+salary);
     }
 }
 class NonTeachingFaculty extends DepartmentFaculty
@@ -57,8 +56,7 @@ class NonTeachingFaculty extends DepartmentFaculty
     }
     public String toString()
     {
-         super.toString();
-         return ("\nDESIGNATION :"+designation+"\nWAGESPERDAY: "+wagesperday+"\nNO OF DAYS: "+no_days+"SALARY: "+calculateSalary());
+         return(super.toString()+"\nDESIGNATION :"+designation+"\nWAGESPERDAY: "+wagesperday+"\nNO OF DAYS: "+no_days+"\nSALARY: "+calculateSalary());
     }
 }
 class faculty
@@ -67,5 +65,7 @@ class faculty
     {
         DepartmentFaculty tf=new TeachingFaculty("CSE","THIRU",3.5,"CHENNAI",2000000);
         System.out.println(tf);
+        DepartmentFaculty ntf=new NonTeachingFaculty("cse","THIRU",29.00,2,"MADURAI");
+        System.out.println(ntf);
     }
 }

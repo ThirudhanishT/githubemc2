@@ -34,15 +34,17 @@ class outer
     }
    class inner
     {
-        int cont_hr=45;
+        int cont_hr=9;
         int calext()
         {
-            if(hr>45)
+            if(hr>9)
             {
-                int l=hr-cont_hr;
-                return l;
+                System.out.println("Invalid");
+                System.out.println("Enter the valid hr must be less then 9");
+                hr=scan.nextInt();
+                return hr;
             }
-            return 0;
+            return hr;
         }
     }
 }

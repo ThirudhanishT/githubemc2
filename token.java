@@ -5,11 +5,11 @@ class outer
     int empId;
     int rem;
     int temp=0;
+    int hr;
     int getdata()
     {
     Scanner scan=new Scanner(System.in);
     System.out.println("Enter the number of the working hours:");
-    int hr;
     hr=scan.nextInt();
     empId=scan.nextInt();
     int i=1;
@@ -37,13 +37,12 @@ class outer
         int cont_hr=45;
         int calext()
         {
-            if(hr<=45)
-               return 0;
             if(hr>45)
             {
-                int l=cont_hr-hr;
+                int l=hr-cont_hr;
                 return l;
             }
+            return 0;
         }
     }
 }
@@ -55,7 +54,7 @@ class token
         Scanner s=new Scanner(System.in);
         int n=s.nextInt();
         outer []o=new outer[n];
-        outer.inner[]in=o.new inner[n];
+        outer.inner[] in=new outer.inner[n];
         int []t=new int[n];
         int []h=new int[n];
         for(int i=0;i<n;i++)
@@ -63,7 +62,8 @@ class token
             System.out.println("Enter the token of employee"+" "+(i+1));
             o[i]=new outer();
             t[i]=o[i].getdata();
-            h[i]=in.calext();
+            in[i]=o[i].new inner(); 
+            h[i]=in[i].calext();
         }
         for(int i=0;i<n;i++)
         {

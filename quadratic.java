@@ -52,6 +52,8 @@ class Outer
 }
 class quadratic
 {
+    public static void main(String []args)
+    {
     Outer o=new Outer();
     int p;
     o.getdata();
@@ -60,5 +62,6 @@ class quadratic
     {
         Outer.Inner inn=new Inner();
         inn.cal();
+    }
     }
 }

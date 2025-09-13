@@ -47,7 +47,7 @@ class token
         }
         for(int i=0;i<n;i++)
         {
-           System.out.println("Token for Employee"+" "+i+"is "+t[i] );
+           System.out.println("Token for Employee"+" "+(i+1)+"is "+t[i] );
         }
     }
 }

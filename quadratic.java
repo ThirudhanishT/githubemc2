@@ -1,5 +1,4 @@
 import java.util.*;
-
 class Outer {
     static int a, b, c;
     static double discriminant;

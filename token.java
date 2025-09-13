@@ -6,12 +6,10 @@ class outer
     int rem;
     int temp=0;
     int hr;
+    Scanner scan=new Scanner(System.in);
     int getdata()
     {
-    Scanner scan=new Scanner(System.in);
     System.out.println("Enter the number of the working hours:");
-    hr=scan.nextInt();
-    empId=scan.nextInt();
     int i=1;
     while(i<=3)
     {
@@ -32,6 +30,12 @@ class outer
     int id=temp1;
     return id;
     }
+    int gethr()
+    {
+    hr=scan.nextInt();
+    empId=scan.nextInt();
+    return hr;
+    }
    class inner
     {
         int cont_hr=9;
@@ -39,9 +43,10 @@ class outer
         {
             if(hr>9)
             {
+                int hr1;
                 System.out.println("Invalid");
                 System.out.println("Enter the valid hr must be less then 9");
-                hr=scan.nextInt();
+                hr1=gethr();
                 return hr;
             }
             return hr;
@@ -64,6 +69,7 @@ class token
             System.out.println("Enter the token of employee"+" "+(i+1));
             o[i]=new outer();
             t[i]=o[i].getdata();
+            o[i].gethr();
             in[i]=o[i].new inner(); 
             h[i]=in[i].calext();
         }

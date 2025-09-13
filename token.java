@@ -9,7 +9,8 @@ class outer
     Scanner scan=new Scanner(System.in);
     int getdata()
     {
-    System.out.println("Enter the number of the working hours:");
+    System.out.println("Enter the employee id no:");
+    empId=scan.nextInt();
     int i=1;
     while(i<=3)
     {
@@ -32,8 +33,8 @@ class outer
     }
     int gethr()
     {
+    System.out.println("Enter the number of the working hours:");
     hr=scan.nextInt();
-    empId=scan.nextInt();
     return hr;
     }
    class inner

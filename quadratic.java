@@ -1,6 +1,6 @@
 import java.lang.System;
 import java.util.*;
-class outer
+class Outer
 {
     static int a;
     static int b;
@@ -29,7 +29,7 @@ class outer
             return 1;
         }
     }
-    static class inner
+    static class Inner
     {
         void cal()
         {
@@ -52,13 +52,13 @@ class outer
 }
 class quadratic
 {
-    Outer o=new Outer(System.in);
+    Outer o=new Outer();
     int p;
     o.getdata();
-    p=check();
+    p=o.check();
     if(p==1)
     {
-        Outer.Inner inn=new Inner(System.in);
+        Outer.Inner inn=new Inner();
         inn.cal();
     }
 }

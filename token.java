@@ -76,7 +76,7 @@ class token
         }
         for(int i=0;i<n;i++)
         {
-           System.out.println("Token for Employee"+" "+(i+1)+"is "+t[i]+"   "+"Extra hours: "+h[i] );
+           System.out.println("Token for Employee"+" "+(i+1)+" : "+"Token: "+t[i]+h[i]+" last 3 empID: "+t[i]+"   "+"Extra hours: "+h[i]);
         }
     }
 }

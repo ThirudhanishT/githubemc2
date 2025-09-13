@@ -37,6 +37,14 @@ class outer
                 int r2=((-b)-con)/(2*a);
                 System.out.println("THE ROOT OF THE EQUATION "+"a"+"x^2"+"+"+"b"+"x"+"+"+"c "+r1 +"and " + r2);
             }
+            else
+            {
+                int m=(-b)/(2*a);
+                int n=(con)/(2*a);
+                int r1=m+n;
+                int r2=m-n;
+                System.out.println("THE ROOT OF THE EQUATION "+"a"+"x^2"+"+"+"b"+"x"+"+"+"c "+r1 +"and " + r2);
+            }
         }
     }
 }

@@ -60,7 +60,7 @@ class quadratic
     p=o.check();
     if(p==1)
     {
-        Outer.Inner inn=new Inner();
+        Outer.Inner inn=new Outer.Inner();
         inn.cal();
     }
     }

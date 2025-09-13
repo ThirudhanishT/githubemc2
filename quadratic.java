@@ -1,67 +1,58 @@
-import java.lang.System;
 import java.util.*;
-class Outer
-{
-    static int a;
-    static int b;
-    static int c;
-    static int con;
-    Scanner scan=new Scanner(System.in);
-    void getdata()
-    {
-        a=scan.nextInt();
-        scan.nextLine();
-        b=scan.nextInt();
-        scan.nextLine();
-        c=scan.nextInt();
-        scan.nextLine();
+
+class Outer {
+    static int a, b, c;
+    static double discriminant;
+
+    void getData() {
+        Scanner scan = new Scanner(System.in);
+        System.out.print("Enter a: ");
+        a = scan.nextInt();
+        System.out.print("Enter b: ");
+        b = scan.nextInt();
+        System.out.print("Enter c: ");
+        c = scan.nextInt();
     }
-    int check()
-    {
-        if(a==0)
-        {
+
+    int check() {
+        if (a == 0) {
             System.out.println("IT IS NOT A QUADRATIC EQUATION");
             return 0;
-        }
-        else
-        {
-            con=(int)Math.sqrt((b*b)-(4*a*c));
+        } else {
+            discriminant = (b * b) - (4 * a * c);
             return 1;
         }
     }
-    static class Inner
-    {
-        void cal()
-        {
-            if(con>0)
-            {
-                int r1=((-b)+con)/(2*a);
-                int r2=((-b)-con)/(2*a);
-                System.out.println("THE ROOT OF THE EQUATION "+"a"+"x^2"+"+"+"b"+"x"+"+"+"c "+r1 +"and " + r2);
-            }
-            else
-            {
-                int m=(-b)/(2*a);
-                int n=(con)/(2*a);
-                int r1=m+n;
-                int r2=m-n;
-                System.out.println("THE ROOT OF THE EQUATION "+"a"+"x^2"+"+"+"b"+"x"+"+"+"c "+r1 +"and " + r2);
+
+    static class Inner {
+        void cal() {
+            System.out.println("THE EQUATION IS: " + a + "(x^2) + " + b + "(x) + " + c);
+
+            if (discriminant > 0) {
+                double r1 = (-b + Math.sqrt(discriminant)) / (2.0 * a);
+                double r2 = (-b - Math.sqrt(discriminant)) / (2.0 * a);
+                System.out.println("ROOTS ARE REAL AND DISTINCT: " + r1 + " and " + r2);
+            } else if (discriminant == 0) {
+                double r = -b / (2.0 * a);
+                System.out.println("ROOTS ARE REAL AND EQUAL: " + r + " and " + r);
+            } else {
+                double realPart = -b / (2.0 * a);
+                double imagPart = Math.sqrt(-discriminant) / (2.0 * a);
+                System.out.println("ROOTS ARE COMPLEX: " + realPart + " + " + imagPart + "i and " + realPart + " - " + imagPart + "i");
             }
         }
     }
 }
-class quadratic
-{
-    public static void main(String []args)
-    {
-    Outer o=new Outer();
-    int p;
-    o.getdata();
-    p=o.check();
-    if(p==1)
-    {
-        Outer.Inner inn=new Outer.Inner();
-        inn.cal();
-    }
+
+class Quadratic {
+    public static void main(String[] args) {
+        Outer o = new Outer();
+        o.getData();
+        int result = o.check();
+
+        if (result == 1) {
+            Outer.Inner in = new Outer.Inner();
+            in.cal();
+        }
     }
 }

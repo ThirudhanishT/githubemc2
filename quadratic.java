@@ -16,18 +16,20 @@ class outer
         c=scan.nextInt();
         scan.nextLine();
     }
-    void check()
+    int check()
     {
         if(a==0)
         {
             System.out.println("IT IS NOT A QUADRATIC EQUATION");
+            return 0;
         }
         else
         {
             con=(int)Math.sqrt((b*b)-(4*a*c));
+            return 1;
         }
     }
-    class inner
+    static class inner
     {
         void cal()
         {
@@ -46,5 +48,17 @@ class outer
                 System.out.println("THE ROOT OF THE EQUATION "+"a"+"x^2"+"+"+"b"+"x"+"+"+"c "+r1 +"and " + r2);
             }
         }
+    }
+}
+class quadratic
+{
+    Outer o=new Outer(System.in);
+    int p;
+    o.getdata();
+    p=check();
+    if(p==1)
+    {
+        Outer.Inner inn=new Inner(System.in);
+        inn.cal();
     }
 }

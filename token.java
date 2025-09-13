@@ -7,10 +7,14 @@ class outer
     int temp=0;
     int hr;
     Scanner scan=new Scanner(System.in);
+    int gete()
+    {
+       System.out.println("Enter the employee id no:");
+       empId=scan.nextInt();
+       return empId; 
+    }
     int getdata()
     {
-    System.out.println("Enter the employee id no:");
-    empId=scan.nextInt();
     int i=1;
     while(i<=3)
     {
@@ -65,10 +69,12 @@ class token
         outer.inner[] in=new outer.inner[n];
         int []t=new int[n];
         int []h=new int[n];
+        int []a=new int[n];
         for(int i=0;i<n;i++)
         {
-            System.out.println("Enter the token of employee"+" "+(i+1));
+            System.out.println("Enter the empId of employee"+" "+(i+1));
             o[i]=new outer();
+            a[i]=o[i].gete();
             t[i]=o[i].getdata();
             o[i].gethr();
             in[i]=o[i].new inner(); 
@@ -76,7 +82,7 @@ class token
         }
         for(int i=0;i<n;i++)
         {
-           System.out.println("Token for Employee"+" "+(i+1)+" : "+"Token: "+t[i]+h[i]+" last 3 empID: "+t[i]+"   "+"Extra hours: "+h[i]);
+           System.out.println("Token for Employee"+" "+(i+1)+" : "+"Token: "+t[i]+h[i]+"  "+" ID: "+a[i]+"  last3empID: "+t[i]+"   "+"Extra hours: "+h[i]);
         }
     }
 }

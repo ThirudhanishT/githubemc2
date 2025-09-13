@@ -44,7 +44,7 @@ class Outer {
     }
 }
 
-class Quadratic {
+class quadratic {
     public static void main(String[] args) {
         Outer o = new Outer();
         o.getData();

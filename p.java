@@ -40,7 +40,7 @@ class SavingAccount extends BankAccount
     }
     void applyIntrest()
     {
-           int c=super.getBalance();
+           double c=super.getBalance();
            intrest=(c*IR)/(100.0);
     }
     void display()
@@ -58,6 +58,16 @@ class p
     public static void main(String [] args)
     {
         SavingAccount s=new SavingAccount();
+        s.intrestRate(5.0);
+        s.applyIntrest();
+        s.display();
+        System.out.println("After depositing:");
+        s.deposit(5000.0);
+        s.intrestRate(5.0);
+        s.applyIntrest();
+        s.display();
+        System.out.println("After withdrawing:");
+        s.deposit(500.0);
         s.intrestRate(5.0);
         s.applyIntrest();
         s.display();

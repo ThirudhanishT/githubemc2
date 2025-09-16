@@ -20,7 +20,7 @@ class asses1
             {
                 case 1:System.out.println("Enter the password");
                        String pass=scan.nextLine();
-                       if(pass.length()>=7 && pass.matches(".*[A-Z].*") && pass.matches(".*[a-z].*"))
+                       if(pass.length()>=7 && pass.matches("[a-zA-Z0-9]+"))
                        {
                          System.out.println("THE PASSWORD IS VALID");
                        }

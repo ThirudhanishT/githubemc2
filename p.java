@@ -7,9 +7,9 @@ class BankAccount
     private double balance;
     BankAccount(int accountNumber,String accountHolder,double balance)
     {
-        accountNumber=this.accountNumber;
-        accountHolder=this.accountHolder;
-        balance=this.balance;
+        this.accountNumber=accountNumber;
+        this.accountHolder=accountHolder;
+        this.balance=balance;
     }
     void deposit(double amount)
     {
@@ -46,7 +46,7 @@ class SavingAccount extends BankAccount
     void display()
     {
         super.display();
-        System.out.println("Intrest  :intrest");
+        System.out.println("Intrest  :"+intrest);
     }
     SavingAccount()
     {
@@ -67,7 +67,7 @@ class p
         s.applyIntrest();
         s.display();
         System.out.println("After withdrawing:");
-        s.deposit(500.0);
+        s.withdraw(500.0);
         s.intrestRate(5.0);
         s.applyIntrest();
         s.display();

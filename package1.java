@@ -1,6 +1,4 @@
-import java.lang.System;
-package mypackage;
-
+package mypackage1;
 public class circle
 {
     double radius;
@@ -22,6 +20,7 @@ public class circle
     }
 }
 
+package mypackage2;
 public class rectangle
 {
     double length;
@@ -53,11 +52,11 @@ class package1
     {
        circle c=new circle();
        c.get(5.0);
-       c.calarea();
-       c.calperi();
+       c.calArea();
+       c.calPeri();
        rectangle r=new rectangle();
        r.getr(59.0,3.0);
        r.calA();
-       r.peri(); 
+       r.calPerir(); 
     }
 }

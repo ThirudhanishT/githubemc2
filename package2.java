@@ -13,7 +13,7 @@ class package2
         System.out.println("Enter the price of the book: ");
         double p=scan.nextDouble();
         System.out.println("Enter the publisher name: ");
-        scan.nextLine();S
+        scan.nextLine();
         String pu=scan.nextLine();
         book b=new book();
         b.showTitle(name);

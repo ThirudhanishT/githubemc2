@@ -9,12 +9,12 @@ class package2
         System.out.println("Enter the name of the book: ");
         String name=scan.nextLine();
         System.out.println("Enter the author name: ");
-        String auth=scan.nectLine();
+        String auth=scan.nextLine();
         System.out.println("Enter the price of the book: ");
         double p=scan.nextDouble();
         System.out.println("Enter the publisher name: ");
         String pu=scan.nextLine();
-        book b=new book()
+        book b=new book();
         b.showTitle(name);
         b.showAuthor(auth);
         b.showPrice(p);

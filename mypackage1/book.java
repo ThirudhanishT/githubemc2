@@ -1,4 +1,4 @@
-package my package1;
+package mypackage1;
 public class book
 {
     public void showTitle(String a)
@@ -9,7 +9,7 @@ public class book
     {
         System.out.println("The author of the book: "+b);
     }
-    public void showPrice(String c)
+    public void showPrice(double c)
     {
         System.out.println("The price of the book is: "+c);
     }
